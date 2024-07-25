@@ -84,8 +84,22 @@
         </div>
         <div class="text-container">
           <p>
-            I made the decision to enter the tech field in late 2021 after months of trying to
-            figure out what I wanted to do with my career.
+            In late 2021, after months of trying to figure out what to do with my career, I decided to learn
+            JavaScript—and I haven’t
+            looked back
+            since. The challenge of honing my problem-solving skills invigorated me, and the progress I made motivated
+            me to
+            continue my software engineering journey. In September 2023, I graduated from Fullstack Academy, where I
+            learned how to
+            build dynamic and responsive web applications using React, Node, Express, and PostgreSQL. Learning fullstack
+            web
+            development has boosted my confidence in my skills and other areas of my life. It’s led to a surprising
+            amount of
+            personal growth that I’m very grateful for. My current goal is to work with a company that allows me to
+            combine my
+            passion for helping people with my love for tech. When I’m not working on personal web development projects
+            or hacking away at
+            a code challenge, you can find me reading, writing, and blogging about books.
           </p>
         </div>
       </div>
@@ -190,12 +204,14 @@
           <div class="article-container">
             <img src="./assets/project-1.png" alt="Project 1" class="project-img" />
           </div>
-          <h2 class="experience-sub-title project-title">Project One</h2>
+          <h2 class="experience-sub-title project-title">Oilay</h2>
           <div class="btn-container">
-            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
+            <button class="btn btn-color-2 project-btn"
+              onclick="location.href='https://github.com/KierranyC/GraceShopper_cap'">
               Github
             </button>
-            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
+            <button class="btn btn-color-2 project-btn"
+              onclick="location.href='https://oilay-8613463ee0be.herokuapp.com/'">
               Live Demo
             </button>
           </div>
@@ -204,7 +220,7 @@
           <div class="article-container">
             <img src="./assets/project-2.png" alt="Project 2" class="project-img" />
           </div>
-          <h2 class="experience-sub-title project-title">Project Two</h2>
+          <h2 class="experience-sub-title project-title">Stranger's Things</h2>
           <div class="btn-container">
             <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
               Github
@@ -218,7 +234,7 @@
           <div class="article-container">
             <img src="./assets/project-3.png" alt="Project 3" class="project-img" />
           </div>
-          <h2 class="experience-sub-title project-title">Project Three</h2>
+          <h2 class="experience-sub-title project-title">Page Trail</h2>
           <div class="btn-container">
             <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
               Github
@@ -234,30 +250,25 @@
   </section>
   <section id="contact">
     <p class="section__text__p1">Get in Touch</p>
-    <h1 class="title">Contact Me</h1>
+    <h1 class="title">Shoot Me An Email!</h1>
     <div class="contact-info-upper-container">
       <div class="contact-info-container">
-        <img src="./assets/email.png" alt="Email icon" class="icon contact-icon" />
-        <!-- <p><a href="mailto:kierranyc@outlook.com">kierranyc@outlook.com</a></p> -->
-        <h1>Email Me!</h1>
-        <div>
-          <form target="_black" action="https://formsubmit.co/fae74917b67491b2a05b8a2864302d0f" method="POST">
-            <div class="form-group">
-              <div class="form-row">
-                <div class="col">
-                  <input type="text" name="name" class="form-control" placeholder="Full Name" required>
-                </div>
-                <div class="col">
-                  <input type="email" name="email" class="form-control" placeholder="Email Address" required>
-                </div>
-              </div>
-            </div>
-            <div class="form-group">
-              <textarea placeholder="Your Message" class="form-control" name="message" rows="10" required></textarea>
-            </div>
-            <button type="submit" class="btn btn-lg btn-dark btn-block">Submit Form</button>
-          </form>
-        </div>
+        <form action="https://formspree.io/f/myzgkaln" method="POST" id="contact-form">
+          <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name">
+          </div>
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email">
+          </div>
+          <div class="form-group">
+            <label for="message">Message:</label>
+            <textarea id="message" name="message"></textarea>
+          </div>
+          <button type="submit" class="btn btn-color-2">Send</button>
+        </form>
+        <div id="form-messages"></div>
       </div>
     </div>
     </div>
@@ -282,5 +293,11 @@
   </footer>
   <script src="script.js"></script>
 </body>
+<div id="modal" class="modal">
+  <div class="modal-content">
+    <span class="close-button" onclick="closeModal()">&times;</span>
+    <p id="modal-message"></p>
+  </div>
+</div>
 
 </html>
