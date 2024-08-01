@@ -58,12 +58,11 @@
 
   #contact {
     margin-top: 4rem;
-    /* Add margin to separate sections */
+    height: fit-content;
   }
 
   footer {
     margin-top: 2rem;
-    /* Add margin to separate sections */
   }
 }
 
@@ -73,29 +72,42 @@
 
 #projects .details-container:hover {
   transform: translateY(-3px);
-  /* Slightly less transform effect */
 }
 
 @media screen and (max-width: 600px) {
 
-  .contact-info-upper-container {
+  /* .contact-info-upper-container {
     flex-direction: column;
     width: 90%;
     padding: 1rem;
-  }
+  } */
 
   .contact-info-container {
     flex-direction: column;
-    margin: 0;
+    /* margin-left: 0; */
   }
 
-  #contact,
-  footer {
+  #contact {
     height: fit-content;
-    /* Adjust height to fit content */
     margin-top: 2rem;
-    /* Add margin to separate sections*/
+  }
 
+  .contact-icon {
+    margin-top: 1rem;
+    /* gap: 0.5rem; */
+    padding: 1rem;
+    padding-left: 1rem;
+  }
+
+  #contact-form {
+    padding: 1rem;
+    max-width: 80%;
+  }
+
+  .form-group input,
+  .form-group textarea {
+    font-size: 0.9rem;
+    padding: 0.4rem;
   }
 
   #profile {
@@ -107,14 +119,16 @@
     font-size: 1rem;
   }
 
+  footer {
+    margin-top: 2rem;
+  }
+
   footer nav {
     height: fit-content;
     margin-bottom: 2rem;
   }
 
-  .about-containers,
-  .contact-info-upper-container,
-  .btn-container {
+  .about-containers {
     flex-wrap: wrap;
   }
 
@@ -162,14 +176,12 @@
 
 #projects .details-container {
   width: 100%;
-  padding: 0.5rem;
+  /* padding: 0.5rem; */
 }
 
 #projects .details-container:hover {
   transform: translateY(-2px);
-  /* Even less transform effect */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  /* Adjust box-shadow for smaller screens */
 }
 
 @media screen and (max-width: 375px) {
@@ -185,9 +197,14 @@
     padding: 1rem;
   } */
 
-  .contact-info-container {
+  /* .contact-info-container {
     flex-direction: column;
-    /* align-items: flex-start; */
+    align-items: flex-start;
+  } */
+
+  #contact-form {
+    padding: 1rem;
+    max-width: 90%;
   }
 
   .form-group {
@@ -196,18 +213,21 @@
 
   .form-group input,
   .form-group textarea {
-    width: 100%;
+    font-size: 0.8rem;
+    padding: 0.3rem;
   }
 
   #projects .details-container {
     width: 100%;
-    padding: 0.5rem;
+    /* padding: 0.5rem; */
   }
 
   #projects .details-container:hover {
     transform: translateY(-1px);
-    /* Minimal transform effect */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-    /* Minimal box-shadow for extra small screens */
+  }
+
+  footer {
+    margin-top: 1rem;
   }
 }

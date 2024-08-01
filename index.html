@@ -219,10 +219,12 @@
           </div>
           <h2 class="experience-sub-title project-title">Stranger's Things</h2>
           <div class="btn-container">
-            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
+            <button class="btn btn-color-2 project-btn"
+              onclick="location.href='https://github.com/KierranyC/Strangers_Things.git'">
               Github
             </button>
-            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
+            <button class="btn btn-color-2 project-btn"
+              onclick="location.href='https://strangersthingsmarket.netlify.app/'">
               Live Demo
             </button>
           </div>
@@ -233,7 +235,23 @@
           </div>
           <h2 class="experience-sub-title project-title">Page Trail</h2>
           <div class="btn-container">
-            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
+            <button class="btn btn-color-2 project-btn"
+              onclick="location.href='https://github.com/KierranyC/ReadingTracker.git'">
+              Github
+            </button>
+            <button class="btn btn-color-2 project-btn" data-disabled="true">
+              Live Demo
+            </button>
+          </div>
+        </div>
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./assets/project-4.png" alt="Project 4" class="project-img" />
+          </div>
+          <h2 class="experience-sub-title project-title">Portfolio</h2>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn"
+              onclick="location.href='https://github.com/KierranyC/portfolio.git'">
               Github
             </button>
             <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
@@ -248,25 +266,23 @@
   <section id="contact">
     <p class="section__text__p1">Get in Touch</p>
     <h1 class="title">Shoot Me An Email!</h1>
-    <div class="contact-info-upper-container">
-      <div class="contact-info-container">
-        <form action="https://formspree.io/f/myzgkaln" method="POST" id="contact-form">
-          <div class="form-group">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name">
-          </div>
-          <div class="form-group">
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email">
-          </div>
-          <div class="form-group">
-            <label for="message">Message:</label>
-            <textarea id="message" name="message"></textarea>
-          </div>
-          <button type="submit" class="btn btn-color-2">Send</button>
-        </form>
-        <div id="form-messages"></div>
-      </div>
+    <div class="contact-info-container">
+      <form action="https://formspree.io/f/myzgkaln" method="POST" id="contact-form">
+        <div class="form-group">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name">
+        </div>
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email">
+        </div>
+        <div class="form-group">
+          <label for="message">Message:</label>
+          <textarea id="message" name="message"></textarea>
+        </div>
+        <button type="submit" class="btn btn-color-2">Send</button>
+      </form>
+      <div id="form-messages"></div>
     </div>
     </div>
     <div class="contact-info-container">
