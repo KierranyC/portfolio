@@ -58,8 +58,12 @@ a:hover {
   text-decoration-color: rgb(181, 181, 181);
 }
 
-.logo {
-  font-size: 2rem;
+.logo img,
+.profile-logo,
+.footer-logo img {
+  width: 100px;
+  /* Adjust as needed */
+  height: auto;
 }
 
 .logo:hover {
