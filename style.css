@@ -224,6 +224,8 @@ section {
 }
 
 .btn {
+  color: black;
+  /* or any color you prefer */
   font-weight: 600;
   transition: all 300ms ease;
   padding: 1rem;
@@ -245,6 +247,11 @@ section {
 .btn-color-2:hover {
   background: rgb(53, 53, 53);
   color: white;
+}
+
+.btn-color-2 {
+  color: black;
+  /* Ensure text color is visible */
 }
 
 .btn-color-1,
