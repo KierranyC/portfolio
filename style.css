@@ -538,7 +538,7 @@ footer p {
 .modal {
   display: none;
   position: fixed;
-  z-index: 1;
+  z-index: 1000;
   left: 0;
   top: 0;
   width: 100%;
@@ -566,7 +566,7 @@ footer p {
   font-size: 28px;
   font-weight: bold;
   position: absolute;
-  top: 13px;
+  top: 10px;
   right: 20px;
   cursor: pointer;
 }
@@ -578,7 +578,7 @@ footer p {
   cursor: pointer;
 }
 
-.modal-content p {
+/* .modal-content p {
   margin: 0;
   font-size: 16px;
-}
+} */
