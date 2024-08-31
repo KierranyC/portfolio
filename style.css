@@ -429,8 +429,12 @@ article .icon {
 .project-title {
   font-size: 1.5rem;
   margin-top: 1rem;
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
   text-align: center;
+}
+
+.project-description {
+  margin-bottom: 1rem;
 }
 
 .project-btn[data-disabled="true"] {
