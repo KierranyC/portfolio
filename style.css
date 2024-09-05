@@ -155,7 +155,7 @@ a:hover {
 /* SECTIONS */
 
 section {
-  padding-top: 10vh;
+  padding-top: 8vh;
   height: 96vh;
   margin: 0 10rem;
   /* box-sizing: border-box; */
@@ -295,7 +295,12 @@ section {
 .arrow {
   position: absolute;
   right: -5rem;
-  bottom: 2.5rem;
+  bottom: 20rem;
+}
+
+.icon.arrow:hover {
+  transform: translateY(-5px);
+  transition: transform 0.3s ease;
 }
 
 .details-container {
